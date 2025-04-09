@@ -42,7 +42,7 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 
 ---
 
-## ▶️ How to Run
+## ▶️ How to Run (WIP, below are placeholders)
 
 ### Compile
 ```bash
@@ -69,7 +69,7 @@ nsys profile -o rk_profile ./rabin_karp input.txt pattern.txt
 
 ---
 
-## 📊 Output & Analysis
+## 📊 Output & Analysis (WIP, below are placeholders)
 After execution, profiling data such as:
 - Total execution time
 - Kernel performance
@@ -79,7 +79,7 @@ After execution, profiling data such as:
 
 ---
 
-## 📚 References
+## 📚 References (not final yet)
 - Thambawita et al., *An Optimized Parallel Failure-less Aho-Corasick Algorithm for DNA Sequence Matching*, 2016.
 - Shah et al., *Parallelizing Rabin-Karp Algorithm on GPU Using CUDA*, 2018.
 - [CUDA Documentation](https://docs.nvidia.com/cuda/)
@@ -100,5 +100,4 @@ Raden Jiwa Bumi Prajasantana
 ```
 
 ---
-
-Silakan ganti `[Nama Kampusmu]` kalau kamu mau pakai nama aslimu. Kalau butuh versi dalam Bahasa Indonesia juga, tinggal bilang aja! 😄
+License Placeholder
