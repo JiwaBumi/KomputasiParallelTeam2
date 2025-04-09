@@ -1,4 +1,4 @@
-# 🔍 Parallel String Matching with CUDA
+#  Parallel String Matching with CUDA
 
 Link Google Docs : https://docs.google.com/document/d/1UJy5XhpXYB6y1YbmfB4oBHEgdm9OmMm5oTTPSiQlqOU/edit?usp=sharing
 
@@ -6,7 +6,7 @@ This project implements and compares two string matching algorithms, **Rabin-Kar
 
 ---
 
-## 📌 Project Objectives
+##  Project Objectives
 - To implement the **Rabin-Karp** and **Aho-Corasick** algorithms in both serial and parallel versions.
 - To optimize and run the parallel versions using **CUDA** for GPU acceleration.
 - To measure and compare the **execution time** and **memory usage** of both algorithms.
@@ -14,14 +14,14 @@ This project implements and compares two string matching algorithms, **Rabin-Kar
 
 ---
 
-## 🧬 Dataset
+##  Dataset
 We use genomic sequence data (nucleotide) as the input text and pattern:
 - Source: [NCBI Genome - Mus musculus](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001635.27/)
 - You can modify or generate custom pattern sequences to test scalability.
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - **CUDA Toolkit** (GPU parallel programming)
 - **C/C++** for algorithm implementation
 - **NVIDIA Nsight Systems** for profiling
@@ -30,7 +30,7 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 ```
 .
 ├── aho_corasick_cuda/         # CUDA-based Aho-Corasick implementation
@@ -44,7 +44,7 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 
 ---
 
-## ▶️ How to Run (WIP, below are placeholders)
+##  How to Run (WIP, below are placeholders)
 
 ### Compile
 ```bash
@@ -71,7 +71,7 @@ nsys profile -o rk_profile ./rabin_karp input.txt pattern.txt
 
 ---
 
-## 📊 Output & Analysis (WIP, below are placeholders)
+##  Output & Analysis (WIP, below are placeholders)
 After execution, profiling data such as:
 - Total execution time
 - Kernel performance
@@ -81,7 +81,7 @@ After execution, profiling data such as:
 
 ---
 
-## 📚 References (not final yet)
+##  References (not final yet)
 - Thambawita et al., *An Optimized Parallel Failure-less Aho-Corasick Algorithm for DNA Sequence Matching*, 2016.
 - Shah et al., *Parallelizing Rabin-Karp Algorithm on GPU Using CUDA*, 2018.
 - [CUDA Documentation](https://docs.nvidia.com/cuda/)
@@ -89,7 +89,7 @@ After execution, profiling data such as:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 Final Project - Parallel Computing  
 Computer Science – Batch 2022  
 Universitas Pelita Harapan
