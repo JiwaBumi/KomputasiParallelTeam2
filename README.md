@@ -90,7 +90,12 @@ After execution, profiling data such as:
 ## 👨‍💻 Author
 Final Project - Parallel Computing  
 Computer Science – Batch 2022  
-Universitas [Nama Kampusmu]
+Universitas Pelita Harapan
+
+Callysa Tanjaya
+Hans Adriel
+Jovan Christian
+Raden Jiwa Bumi Prajasantana
 
 ```
 
