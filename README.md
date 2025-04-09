@@ -1,5 +1,7 @@
 # 🔍 Parallel String Matching with CUDA
 
+Link Google Docs : https://docs.google.com/document/d/1UJy5XhpXYB6y1YbmfB4oBHEgdm9OmMm5oTTPSiQlqOU/edit?usp=sharing
+
 This project implements and compares two string matching algorithms, **Rabin-Karp** and **Aho-Corasick**, in both serial (CPU) and parallel (GPU) versions using **CUDA**. The goal is to evaluate their performance when applied to large-scale genomic data, specifically DNA sequences of *Mus musculus* (house mouse).
 
 ---
