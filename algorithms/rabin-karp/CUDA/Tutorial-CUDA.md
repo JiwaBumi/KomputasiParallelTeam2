@@ -1,9 +1,11 @@
 The difference between these files are the file paths specifying the pattern and dna bank, as well as the DEFINES:  
 
+```c
   #define MAX_DNA 1000000  
   #define MAX_PATTERNS 128  
   #define MAX_PATTERN_LEN 10  
-  #define D 4  
+  #define D 4
+'''
 
   MAX_DNA to specify how much there is inside the bank  
   MAX_PATTERNS to specify how many patterns in the patterns txt  
@@ -13,7 +15,7 @@ The difference between these files are the file paths specifying the pattern and
   After this, hange the location accordingly so that it located the pattern and dna bank txt files.  
   If not, the code will run but you will get "Segmentation Fault" error and nothing will happen  
 
-  
+```c
     FILE *f = fopen("../../Dataset/dna_bank_1m.txt", "r");
     fgets(dna, MAX_DNA, f);
     fclose(f);
@@ -26,4 +28,4 @@ The difference between these files are the file paths specifying the pattern and
         npat++;
     }
     fclose(f);  
-
+'''
