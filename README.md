@@ -48,7 +48,7 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 
 ---
 
-##  How to Run (WIP, below are placeholders)
+##  How to Run
 
 ### Compile
 ```bash
@@ -136,4 +136,5 @@ Raden Jiwa Bumi Prajasantana
 ```
 
 ---
-License Placeholder
+MIT License. Check here: https://opensource.org/licenses/MIT
+TL;DR = Allowed to modify, distribute, and even commercial usage as long as there is ATTRIBUTION
