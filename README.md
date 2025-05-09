@@ -99,7 +99,7 @@ rabin1024.exe
 ./aho dna_bank_1m.txt patterns_512_len10.txt
 ./aho dna_bank_1m.txt patterns_1024_len10.txt
 ```
-
+---
 ### Profiling
 Run this command in the same directory as the compiled file:
 ```bash
@@ -123,8 +123,6 @@ Then use Nsight Systems GUI to analyze the rep files, or a database viewer for S
 Use any database viewer tools Sqlite viewer such as Sqlite3 or DB Browser...etc.  
 We recommend [DB Browser](https://sqlitebrowser.org/). Its only around 20MB and you can choose an installer or zip with the .exe already in it. Open the .exe then just click 'Open Database..' or drag the Sqlite file into the app.  
 
----
-
 ##  Output & Analysis  
 After execution, profiling data such as:
 - Total execution time
@@ -132,6 +130,7 @@ After execution, profiling data such as:
 - Memory usage
 
 ...are collected using Nsight Systems (nsys) and recorded onto tables and graphs. All results are analyzed in the final report doc and spreadsheet.  
+It collects a lot of data and not just those three.  
 'nsys example.png' image inside Documents folder shows what the reports looked like when we analyzed with Nsight Systems (nsys) user interface.
 
 ---
@@ -164,10 +163,12 @@ Final Project - Parallel Computing
 Computer Science – Batch of 2022  
 Universitas Pelita Harapan
 
-Callysa Tanjaya  
-Hans Adriel  
-Jovan Christian  
-Raden Jiwa Bumi Prajasantana  
+Callysa Tanjaya (achylast)  
+Hans Adriel (ikullz)  
+Jovan Christian (Jovvvc)   
+Raden Jiwa Bumi Prajasantana (JiwaBumi)  
+
+Robertus Hudi - Our professor. Thank you for the lessons!
 
 ## License  
 ```
