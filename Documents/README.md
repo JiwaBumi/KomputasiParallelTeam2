@@ -5,11 +5,12 @@
   - use your system's search bar, open the nsys-ui.exe on where you installed Nsight Systems
   - open command prompt/terminal/powershell
   - type 'nsys-ui' (wihout apostrophes, and its the esiest way. Just need to specify the .exe in PATH first)
+  - Or when on the directory where the nsys rep files are, type 'nsys-ui [your-report-name].nsys-rep'
 - File > Open... and choose the rep or sqlite file  
   OR
 - Drag the files to the GUI  
 
-# How to view Sqlite
+# How to view SQLITE
 Use any database viewer tools Sqlite viewer such as Sqlite3 or DB Browser...etc.  
 We recommend [DB Browser](https://sqlitebrowser.org/). Its only around 20MB and you can choose an installer or zip with the .exe already in it. Open the .exe then just click 'Open Database..' or drag the Sqlite file into the app.  
 
