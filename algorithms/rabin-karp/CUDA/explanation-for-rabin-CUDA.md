@@ -30,3 +30,4 @@ The difference between these files are the file paths specifying the pattern and
     }
     fclose(f);  
 
+For tutorial how to compile and execute, see the main README
