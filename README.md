@@ -28,7 +28,7 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 ##  Technologies Used
 - **CUDA Toolkit** for GPU parallel programming; compile and execute CUDA code  
 - **C/C++** for algorithm implementation  
-- **NVIDIA Nsight Systems** for profiling  
+- **NVIDIA Nsight Systems** for profiling and analyzing reports  
 - **GCC** to compile C++ files  
 - **Command Prompt, Terminal or PowerShell** for compiling and execution  
 - **Git** and **GitHub** for version control and documentation  
@@ -108,6 +108,20 @@ nsys profile -o [INSERT OUTPUT NAME] --stats=true [EXECUTE COMMAND SUCH AS: ./ah
 nsys profile -o report_rabin1024 --stats=true ./rabin1024
 nsys profile -o aho_L8 --stats=true ./aho dna_bank_1m.txt patterns_8_len10.txt  
 ```
+Then use Nsight Systems GUI to analyze the rep files, or a database viewer for SQLITE files
+#### Viewing Nsys Rep files
+- Open Nsight Systems GUI. You can do it 3 ways:  
+  - Use your system's search bar, open the nsys-ui.exe on where you installed Nsight Systems
+  - Open command prompt/terminal/powershell
+  - Type 'nsys-ui' (wihout apostrophes, and its the esiest way. Just need to specify the .exe in PATH first)
+  - Or when on the directory where the nsys rep files are, type 'nsys-ui [your-report-name].nsys-rep'
+- File > Open... and choose the rep or sqlite file  
+  OR
+- Drag the files to the GUI  
+
+#### Viewing SQLITE files
+Use any database viewer tools Sqlite viewer such as Sqlite3 or DB Browser...etc.  
+We recommend [DB Browser](https://sqlitebrowser.org/). Its only around 20MB and you can choose an installer or zip with the .exe already in it. Open the .exe then just click 'Open Database..' or drag the Sqlite file into the app.  
 
 ---
 
