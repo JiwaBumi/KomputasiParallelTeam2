@@ -55,8 +55,10 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 ---
 
 ##  How to Run
-First, ensure that the dataset files (dna bank and patterns) are on the same folder as the algorithm. This is because each member created and experimented on the code where the inputs are on the same folder as the algorithm. Either this or modify the input to specify "Dataset/" folder.  
-And general advice for command prompts/terminal/powershell: don't forget to 'cd' or be in same location/directory as the files.  
+- Ensure that the dataset files (dna bank and patterns) are on the same directory as the algorithm code. This is because each of us created and experimented the algorithm on the same folder as where the inputs were.
+- If not, then modify the input in the code to specify "Dataset/" folder.  
+- General advice for command prompts/terminal/powershell: don't forget to 'cd' or be in same location/directory as the files.
+- The guide is  mainly for Windows and Linux users. **For Mac, it should work fine AS LONG AS ITS NOT CUDA OR NSYS. You will need alternatives such as someone's server/device, or other such as Google Colab, Kaggle..etc**
 
 ### Compile
 ```bash
@@ -141,6 +143,8 @@ It collects a lot of data and not just those three.
 ##  References    
 - [CUDA Documentation](https://docs.nvidia.com/cuda/)
 - [NVIDIA Nsight Systems](https://developer.nvidia.com/nsight-systems)
+- [C/C++ for Windows](https://www.mingw-w64.org/)
+- [C/C++ for Apple Mac](https://developer.apple.com/xcode/)
 - [GCC, the GNU Compiler Collection](https://gcc.gnu.org/)
 - [Git](https://git-scm.com/)
 - [Cisco AnyConnect Secure Mobility Client](https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html) (This was only used to access our university's SSH/HPC server. Obtain this software from your institution or workplace, or just the code run on your own machine)
