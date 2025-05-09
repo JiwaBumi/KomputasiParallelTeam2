@@ -53,33 +53,51 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 ### Compile
 ```bash
 # For Rabin-Karp non-CUDA
-cd rabin_karp_cuda              # Change location to where the code is
-make
+cd rabin_karp              # Change location to where the code is
+g++ -o rb_sequential rb_sequential.cpp
 
 # For Rabin-Karp CUDA (repeat from 8 until 1024, or whichever you want)
-cd rabin_karp_cuda              # Change location to where the code is
+cd CUDA              # Change location to where the code is
 nvcc -o rabin1024 rabin1024.cu  
 
 # For Aho-Corasick non-CUDA
 cd aho-corasick              # Change location to where the code is
-make
+g++ -o ac_sequential ac_sequential.cpp
 
 # For Aho-Corasick CUDA
 cd aho-corasick             # Change location to where the code is  
-nvcc -o ahoCUDA aho.cu
+nvcc -o aho ac.cu
 
 ```
 
 ### Execute
 ```bash
-./rabin_karp input.txt pattern.txt
-./aho_corasick input.txt pattern.txt
+# Rabin-Karp non-CUDA (just ./[NAME OF COMPILED EXE])
+./rb_sequential
+
+# Rabin-Karp CUDA (just change 'rabin1024' to the name of the compiled .exe you just did above)
+./rabin1024
+# If that doesnt work, this:
+rabin1024.exe
+
+# Aho-Corasick non-CUDA (just ./[NAME OF COMPILED EXE])
+./ac_sequential
+
+# Aho-Corasick CUDA (./[NAME OF COMPILED FILE] [NAME OF DNA BANK TXT] [NAME OF PATTERNS TXT]
+./aho dna_bank_1m.txt patterns_8_len10.txt
+./aho dna_bank_1m.txt patterns_16_len10.txt
+./aho dna_bank_1m.txt patterns_32_len10.txt
+./aho dna_bank_1m.txt patterns_64_len10.txt
+./aho dna_bank_1m.txt patterns_128_len10.txt
+./aho dna_bank_1m.txt patterns_256_len10.txt
+./aho dna_bank_1m.txt patterns_512_len10.txt
+./aho dna_bank_1m.txt patterns_1024_len10.txt
 ```
 
 ### Profiling
 Run this command in the same directory as the compiled file:
 ```bash
-nsys profile -o rk_profile ./rabin_karp input.txt pattern.txt
+nsys profile -o [INSERT NAME FOR OUTPUT] --stats=true [COMMAND TO EXECUTE, SUCH AS: ./aho dna_bank_1m.txt patterns_8_len10.txt]  
 ```
 
 ---
