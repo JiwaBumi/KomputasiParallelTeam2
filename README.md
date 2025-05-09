@@ -128,13 +128,12 @@ Final Project - Parallel Computing
 Computer Science – Batch of 2022  
 Universitas Pelita Harapan
 
-Callysa Tanjaya
-Hans Adriel
-Jovan Christian
-Raden Jiwa Bumi Prajasantana
+Callysa Tanjaya  
+Hans Adriel  
+Jovan Christian  
+Raden Jiwa Bumi Prajasantana  
 
+## License  
 ```
-
----
 MIT License. Check here: https://opensource.org/licenses/MIT
 TL;DR = Allowed to modify, distribute, and even commercial usage as long as there is ATTRIBUTION
