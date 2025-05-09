@@ -17,7 +17,7 @@ This project implements and compares two string matching algorithms, **Rabin-Kar
 ##  Dataset
 We use genomic sequence data (nucleotide) as the input text and pattern:
 - Source: [NCBI Genome - Mus musculus](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001635.27/)
-- You can modify or generate custom pattern sequences to test scalability.
+- Datasets and Patterns (from 8to 1024) already included inside the 'Dataset' folder
 
 ---
 
@@ -27,19 +27,23 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 - **NVIDIA Nsight Systems** for profiling
 - **Makefile** or shell commands for execution
 - **Git** and **GitHub** for version control and documentation
+- **Cisco AnnyConnect VPN** and **SSH/HPC Server** specifically for execution of our code FOR the essay project. Our code can be executed locally by anyone (needs NVIDIA GPU for .cu files)
 
 ---
 
 ##  Project Structure
 ```
 .
-├── aho_corasick_cuda/         # CUDA-based Aho-Corasick implementation
-├── rabin_karp_cuda/           # CUDA-based Rabin-Karp implementation
-├── serial_versions/           # CPU (non-parallel) versions of both algorithms
-├── dataset/                   # Sample input DNA sequences and patterns
-├── profiling_reports/         # Profiling results (.nsys-rep) and analysis
-├── result_graphs/             # Graphs comparing execution time & memory
-└── README.md                  # This file
+├── Dataset/                   # Contains DNA text files and pattern sets
+├── Documents/                 # Contains reports, images, and Nsight profiling data
+│   ├── Nsys Aho/              # Nsight Systems report for Aho-Corasick (CUDA)
+│   └── Nsys Rabin/            # Nsight Systems report for Rabin-Karp (CUDA)
+├── algorithms/                # Contains folders for implementation of both algorithms
+│   ├── aho-corasick/          # Aho-Corasick algorithm (C++ and CUDA versions both here)
+│   └── rabin-karp/            # Rabin-Karp algorithm. The cpp version is here
+│       └── CUDA/              # CUDA version of Rabin-Karp algorithm is here
+└── README.md                  # **YOU ARE CURRENTLY HERE**
+
 ```
 
 ---
@@ -48,13 +52,22 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 
 ### Compile
 ```bash
-# For Rabin-Karp
-cd rabin_karp_cuda
+# For Rabin-Karp non-CUDA
+cd rabin_karp_cuda              # Change location to where the code is
 make
 
-# For Aho-Corasick
-cd aho_corasick_cuda
+# For Rabin-Karp CUDA (repeat from 8 until 1024, or whichever you want)
+cd rabin_karp_cuda              # Change location to where the code is
+nvcc -o rabin1024 rabin1024.cu  
+
+# For Aho-Corasick non-CUDA
+cd aho-corasick              # Change location to where the code is
 make
+
+# For Aho-Corasick CUDA
+cd aho-corasick             # Change location to where the code is  
+nvcc -o ahoCUDA aho.cu
+
 ```
 
 ### Execute
@@ -91,7 +104,7 @@ After execution, profiling data such as:
 
 ##  Author
 Final Project - Parallel Computing  
-Computer Science – Batch 2022  
+Computer Science – Batch of 2022  
 Universitas Pelita Harapan
 
 Callysa Tanjaya
