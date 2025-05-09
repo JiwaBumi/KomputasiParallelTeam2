@@ -32,7 +32,7 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 - **GCC** to compile C++ files  
 - **Command Prompt, Terminal or PowerShell** for compiling and execution  
 - **Git** and **GitHub** for version control and documentation  
-- **Cisco AnnyConnect VPN** and **SSH/HPC Server** specifically for execution of our code FOR the essay project. Our code can be executed locally by anyone (needs NVIDIA GPU for .cu files)
+- **Cisco AnyConnect VPN** and **SSH/HPC Server** specifically for execution of our code FOR the essay project. Our code can be executed locally by anyone (needs NVIDIA GPU for .cu files)
 - **WinSCP** to view and manage files on the SSH/HPC server more beautifully and more convenient. Not required if not using SSH/HPC server
 - **Visual Studio Code**  as our members' choice for text editors for coding, as well as pushing updates to Github
 ---
@@ -55,6 +55,8 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 ---
 
 ##  How to Run
+First, ensure that the dataset files (dna bank and patterns) are on the same folder as the algorithm. This is because each member created and experimented on the code where the inputs are on the same folder as the algorithm. Either this or modify the input to specify "Dataset/" folder.  
+And general advice for command prompts/terminal/powershell: don't forget to 'cd' or be in same location as the files.  
 
 ### Compile
 ```bash
