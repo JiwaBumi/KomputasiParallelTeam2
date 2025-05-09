@@ -48,7 +48,7 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 │   ├── aho-corasick/          # Aho-Corasick algorithm (C++ and CUDA versions both here)
 │   └── rabin-karp/            # Rabin-Karp algorithm. The cpp version is here
 │       └── CUDA/              # CUDA version of Rabin-Karp algorithm is here
-└── README.md                  # **YOU ARE CURRENTLY HERE**
+└── README.md                  # YOU ARE CURRENTLY HERE!
 
 ```
 
