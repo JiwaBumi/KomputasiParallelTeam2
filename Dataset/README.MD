@@ -1,5 +1,5 @@
 - The way our code works, dataset and patterns must be included as .txt for our algorithm to read from.  
-- It exactly has to be .txt, which is why for dataset, FASTA file that we got had to be converted first using prepare_dna_dataset.py clean_dataset.py, and clean_uncut.py  
-- Just make sure to change the input name on the code.  
+- It exactly has to be .txt, which is why for dataset, FASTA file that we got had to be converted first. We used clean_dataset.py 
+- Just make sure to change the input name on the code, whether its the actual algorithm or clean_Dataset.py. Any code, watch for the input    
 - As for patterns, just write down what to look for.  
 - Our algorithm is meant to read 10 letters for each pattern, and new line for each pattern.
