@@ -13,7 +13,7 @@ The difference between these files are the file paths specifying the pattern and
   MAX_PATTERN_LEN to specify how long each pattern is  
   D to specify how many characters for the hash. Its 4 for all code because of A, C, G, T, which are mentioned in '__device__ int char_to_int'  
 
-  After this, hange the location accordingly so that it located the pattern and dna bank txt files.  
+  After this, change the location accordingly so that it located the pattern and dna bank txt files.  
   If not, the code will run but you will get "Segmentation Fault" error and nothing will happen  
 
 
