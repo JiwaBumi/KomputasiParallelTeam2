@@ -97,7 +97,10 @@ rabin1024.exe
 ### Profiling
 Run this command in the same directory as the compiled file:
 ```bash
-nsys profile -o [INSERT NAME FOR OUTPUT] --stats=true [COMMAND TO EXECUTE, SUCH AS: ./aho dna_bank_1m.txt patterns_8_len10.txt]  
+nsys profile -o [INSERT OUTPUT NAME] --stats=true [EXECUTE COMMAND SUCH AS: ./aho dna_bank_1m.txt patterns_8_len10.txt]
+# EXAMPLES:
+nsys profile -o report_rabin1024 --stats=true ./rabin1024
+nsys profile -o aho_L8 --stats=true ./aho dna_bank_1m.txt patterns_8_len10.txt  
 ```
 
 ---
