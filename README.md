@@ -55,6 +55,7 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 ---
 
 ##  How to Run
+### Important to Read before experimenting:
 - Ensure that the dataset files (dna bank and patterns) are on the same directory as the algorithm code. This is because each of us created and experimented the algorithm on the same folder as where the inputs were.
 - If not, then modify the input in the code to specify "Dataset/" folder.  
 - General advice for command prompts/terminal/powershell: don't forget to 'cd' or be in same location/directory as the files.
@@ -81,15 +82,14 @@ nvcc -o aho ac.cu
 ```
 
 ### Execute  
-Ensure in the command prompt/terminal/powershell, you are in the same location/directory as the compiled files.
+- Ensure in the command prompt/terminal/powershell, you are in the same location/directory as the compiled files.  
+- Whether command is './[file name]' or '[name of file].exe' depends whether you are in command prompt, terminal, or powershell. Try both or the other if one doesn't work.  
 ```bash
 # Rabin-Karp non-CUDA (just ./[NAME OF COMPILED EXE])
 ./rb_sequential
 
 # Rabin-Karp CUDA (just change 'rabin1024' to the name of the compiled .exe you just did above)
 ./rabin1024
-# If that doesnt work, this:
-rabin1024.exe
 
 # Aho-Corasick non-CUDA (just ./[NAME OF COMPILED EXE])
 ./ac_sequential
