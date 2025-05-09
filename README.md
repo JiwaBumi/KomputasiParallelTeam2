@@ -56,29 +56,30 @@ We use genomic sequence data (nucleotide) as the input text and pattern:
 
 ##  How to Run
 First, ensure that the dataset files (dna bank and patterns) are on the same folder as the algorithm. This is because each member created and experimented on the code where the inputs are on the same folder as the algorithm. Either this or modify the input to specify "Dataset/" folder.  
-And general advice for command prompts/terminal/powershell: don't forget to 'cd' or be in same location as the files.  
+And general advice for command prompts/terminal/powershell: don't forget to 'cd' or be in same location/directory as the files.  
 
 ### Compile
 ```bash
 # For Rabin-Karp non-CUDA
-cd rabin_karp              # Change location to where the code is
+cd rabin_karp              # Change location/directory to where the code is at
 g++ -o rb_sequential rb_sequential.cpp
 
 # For Rabin-Karp CUDA (repeat from 8 until 1024, or whichever you want)
-cd CUDA              # Change location to where the code is
+cd CUDA                    # Change location/directory to where the code is at  
 nvcc -o rabin1024 rabin1024.cu  
 
 # For Aho-Corasick non-CUDA
-cd aho-corasick              # Change location to where the code is
+cd aho-corasick              # Change location/directory to where the code is at
 g++ -o ac_sequential ac_sequential.cpp
 
 # For Aho-Corasick CUDA
-cd aho-corasick             # Change location to where the code is  
+cd aho-corasick             # Change location/directory to where the code is at  
 nvcc -o aho ac.cu
 
 ```
 
-### Execute
+### Execute  
+Ensure in the command prompt/terminal/powershell, you are in the same location/directory as the compiled files.
 ```bash
 # Rabin-Karp non-CUDA (just ./[NAME OF COMPILED EXE])
 ./rb_sequential
@@ -103,7 +104,7 @@ rabin1024.exe
 ```
 ---
 ### Profiling
-Run this command in the same directory as the compiled file:
+Run this command in the same directory as the compiled files:
 ```bash
 nsys profile -o [INSERT OUTPUT NAME] --stats=true [EXECUTE COMMAND SUCH AS: ./aho dna_bank_1m.txt patterns_8_len10.txt]
 # EXAMPLES:
