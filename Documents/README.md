@@ -1,5 +1,9 @@
 # This folder is for any documents, reports, or images, and anything that doesnt have to do with the algorithms.
 ---
+# Our Project (may be private, mostly meant for our professor)
+Link to Google Docs : https://docs.google.com/document/d/1UJy5XhpXYB6y1YbmfB4oBHEgdm9OmMm5oTTPSiQlqOU/edit?usp=sharing  
+Link to Spreadsheet : https://docs.google.com/spreadsheets/d/1MurFNFRxrK0nIjqRHkG9ItVnqqXn7qz4/edit?usp=sharing&ouid=100613193120402018407&rtpof=true&sd=true  
+---
 # How to view Nsys rep
 - Open Nsight Systems GUI. You can do it 3 ways:  
   - use your system's search bar, open the nsys-ui.exe on where you installed Nsight Systems
